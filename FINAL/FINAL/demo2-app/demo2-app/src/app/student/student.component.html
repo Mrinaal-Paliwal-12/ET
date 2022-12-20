@@ -1,0 +1,28 @@
+
+<br><br>
+<p class="text-danger">{{errorMsg}}</p>
+<button (click) = "getStudentData()" class="btn btn-info"> Get All Student Data </button> 
+<div class="form-floating mb-3">
+    <input type="text" class="form-control" id="floatingInput" [(ngModel)]="Rollno">
+    <label for="floatingInput">RollNo</label>
+  </div>
+  <div class="form-floating">
+    <input type="text" class="form-control" id="floatingPassword" [(ngModel)]="StudentName">
+    <label for="floatingPassword">Student Name</label>
+  </div>
+  <div class="form-floating">
+    <input type="text" class="form-control" id="floatingPassword" [(ngModel)]="Courses" >
+    <label for="floatingPassword">Courses</label>
+  </div>
+  
+  <button (click) = "list1()" class="btn btn-info"> Get Student Data </button>  &nbsp;
+  <button (click) = "updateStudentData()" class="btn btn-info"> Update Student Data </button> <br>
+
+<table border="1" class="table table-striped table-hover">
+<tr *ngFor="let student of studentsData">
+    <td>{{student.rollno}}</td>
+    <td>{{student.studentName}}</td>
+    <td>{{student.courses}}</td>
+</tr>
+</table>
+

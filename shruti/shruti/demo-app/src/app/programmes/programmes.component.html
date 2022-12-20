@@ -1,0 +1,16 @@
+<p>programmes works!</p>
+<p
+    [id]="sayHelloId"
+    [style.color]="fontColor">
+    You can set my color in the component!
+</p>
+<button type="button" (click)="changeMyColor()" onclick="this.disabled=true">
+    change My Color
+</button>
+
+<button type="button" (click)="popupbox()">
+    Click Here
+</button>
+<br><br>
+<!-- to use if in HTML-->
+<a *ngIf="canClick" routerLink="/welcome" target="_blank">Home Page In a new Window</a>

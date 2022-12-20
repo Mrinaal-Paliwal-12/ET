@@ -1,0 +1,16 @@
+table,th,td,tr{
+    border: 1px solid;
+    text-align: center;
+    padding: 10px;
+}
+tr:nth-child(even) {background-color: #f1f0a6;}
+tr:nth-child(odd) {background-color: #eeb468;}
+table{
+    background-color: rgba(126, 109, 11, 0.507);
+    width:60%;
+    position: absolute;
+    left:20%;
+}
+.exam{
+    padding: 40px;
+   }

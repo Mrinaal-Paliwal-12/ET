@@ -1,0 +1,97 @@
+<style>
+    .darkredbg {
+    width: 80%;
+    background-color: #b7202e;
+    height: 60px;
+    float: left;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+}
+
+
+.brightredbg {
+    width: 20%;
+    background-color: #ed1c24;
+    height: 60px;
+    float: left;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+    left:0
+}
+.rightftpatch:after {
+    content: "";
+    width: 5%;
+    background-color: #b7202e;
+    height: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.text-center {
+    text-align: center!important;
+}
+div{
+    display: block;
+    text-align: center!important;
+}
+
+#footer.copyright{
+    text-align: center;
+    padding-top: 30px;
+}
+.copyrightsec.copyright {
+    width: 50%;
+    float: left;
+    top: 8px;
+    font-family: "Fira Sans",sans-serif;
+    font-size: 12px;
+    color: #58595b;
+    position: relative;
+}
+.copyrightsec {
+    width: 60%;
+    float: none;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.copyrightsec ul {
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+}
+.copyright{
+    width: 20%;
+    text-align: center;
+    height: 60px;
+    float: left;
+    bottom: 40px;
+    position: absolute;
+    z-index: 2;
+    left:0
+}
+</style>
+<div class="rightftpatch">
+    <div class="copyrightsec hidden-mob">
+        <!-- <ul class="">
+            <li><a href="https://www.somaiya.edu/en/terms-and-conditions/" class="padd10-lt link-lt">Terms &amp; Conditions</a></li>
+            <li><a href="https://www.somaiya.edu/en/privacy-policy/" class="link-lt">Privacy Policy</a></li>
+            <li><a href="https://www.somaiya.edu/en/disclaimer/" class="link-lt">Disclaimer</a></li>
+        </ul> -->
+        
+    </div>
+    <span class="copyright">@copyright {{rollNo}} - {{userName}}</span>
+
+</div>
+
+<div class="brightredbg"></div>
+<div class="darkredbg"></div>

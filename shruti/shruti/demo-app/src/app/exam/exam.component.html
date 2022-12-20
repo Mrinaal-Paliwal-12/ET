@@ -1,0 +1,21 @@
+
+<div class="exam">
+        <table>
+            <tr>
+            <th>Date</th>
+            <th>Subject</th>
+            <th>Course</th>
+            <th>Time</th>
+        </tr>
+        <!-- <ul>
+            <li *ngFor="let student of STUDENTS"> -->
+        <tr *ngFor="let ex of EXAM">
+            <td><span class="name">{{ex.date}}</span></td>
+            <td><span class="name">{{ex.subject}}</span></td>
+            <td><span class="name">{{ex.course}}</span></td>
+            <td><span class="name">{{ex.timing}}</span></td>
+
+        </tr>
+        </table>
+    </div>    
+    
